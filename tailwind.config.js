@@ -6,6 +6,9 @@ export default {
       colors: {
         beige: "rgb(245, 245, 220)",
       },
+      fontFamily: {
+        logo: "Moirai One",
+      },
     },
   },
   plugins: [],

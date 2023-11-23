@@ -7,32 +7,54 @@ import IMAGES from "./Images/Images";
 
 function App() {
   // const [count, setCount] = useState(0);
-  useEffect(function () {
-    async function weatherCall() {
-      const resp = await fetch(
-        "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=oW1rV0cqi8lZe1Uk6kQ5s1Qp1necwrGA"
-      );
-      const data = await resp.json();
-      console.log(data);
-    }
-    weatherCall();
-  }, []);
+  // useEffect(function () {
+  //   async function weatherCall() {
+  //     const resp = await fetch(
+  //       "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=oW1rV0cqi8lZe1Uk6kQ5s1Qp1necwrGA"
+  //     );
+  //     const data = await resp.json();
+  //     console.log(data);
+  //   }
+  //   weatherCall();
+  // }, []);
+
   return (
     <>
-      <div className="font-mono font-semibold  bg-beige text-gray-700">
-        <nav className="h-16 bg-indigo-300 flex items-center justify-between p-7 shadow-lg shadow-yellow-600/40">
-          <p>logo</p>
-          <ul className="list-none flex space-x-11 ">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>contact</li>
+      <div className="font-mono font-semibold  bg-beige text-gray-700  sm:flex-1">
+        <nav className="h-[80px] w-screen bg-gray-300 flex text-xl items-center justify-between  shadow-2xl shadow-yellow-600/40 sm:bg-gradient-to-r  fixed px-6 py-auto">
+          <p className="text-3xl font-logo ">YISHAK</p>
+          <ul className="list-none  space-x-7 hidden sm:flex">
+            <li className="nav_btn">Home</li>
+            <li className="nav_btn">About</li>
+            {/* <li>About</li> */}
+            <li className="nav_btn">Services</li>
+            <li className="nav_btn">Portfolio</li>
+            <li className="nav_btn">contact</li>
           </ul>
+          <div className="sm:hidden">
+            <svg
+              className="w-6 h-6 text-gray-800 dark:text-white "
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </div>
         </nav>
+
         <div className="flex justify-evenly">
           <div className="h-[88vh] text-center justify-center items-center  flex-col center ">
-            <h1 className="text-4xl pt-[280px] ">Hey, I&apos;m Yishak</h1>
+            <h1 className=" text-4xl sm:text-7xl pt-[100px] sm:pt-[280px] ">
+              Hey, I&apos;m Yishak
+            </h1>
             <h1 className="text-2xl">I&apos;m a Front-End Web Developer</h1>
             <p className="max-w-xl m-x-auto">
               Passionate about creating engaging web experiences through

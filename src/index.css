@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav_btn {
+    @apply p-2 rounded-xl  hover:cursor-pointer hover:text-white;
+  }
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
