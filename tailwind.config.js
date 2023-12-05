@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         logo: "Moirai One",
+        name: "Potta One",
       },
     },
   },
