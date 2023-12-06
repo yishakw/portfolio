@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        frontend: "url(src/images/frontend.png)",
+        frontend: "url(src/images/frontend-.png)",
+        code: "url(src/images/code.png)",
       },
       colors: {
         beige: "rgb(245, 245, 220)",

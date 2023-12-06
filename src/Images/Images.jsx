@@ -7,7 +7,7 @@ const IMAGES = {
   email: new URL("./envelope.svg", import.meta.url).href,
   linkedin: new URL("./linkedin.svg", import.meta.url).href,
   telegram: new URL("./telegram.svg", import.meta.url).href,
-  frontend: new URL("./frontend.png", import.meta.url).href,
+  frontend: new URL("./frontend--.png", import.meta.url).href,
   html: new URL("./html-5.svg", import.meta.url).href,
   css: new URL("./css3.svg", import.meta.url).href,
   react: new URL("./react.svg", import.meta.url).href,

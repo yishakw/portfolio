@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .nav_btn {
-    @apply p-2 rounded-xl  hover:cursor-pointer hover:text-white;
+    @apply p-2 rounded-xl  hover:cursor-pointer hover:text-white hover:mix-blend-color-dodge hover:bg-slate-800 hover:drop-shadow-2xl;
   }
 }
 /* :root {
