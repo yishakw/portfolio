@@ -6,7 +6,7 @@
 
 @layer components {
   .nav_btn {
-    @apply p-2 rounded-xl  hover:cursor-pointer hover:text-white hover:mix-blend-color-dodge hover:bg-slate-800 hover:drop-shadow-2xl;
+    @apply p-2 rounded-xl  hover:cursor-pointer hover:text-violet-800 hover:mix-blend-color-dodge hover:bg-gray-600;
   }
 }
 /* :root {

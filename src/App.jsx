@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Service from "./components/Service";
 import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
 function App() {
   // const [count, setCount] = useState(0);
   // useEffect(function () {
@@ -35,6 +36,8 @@ function App() {
         <About />
 
         <Service />
+        <Portfolio />
+        <Contact />
       </div>
     </>
   );

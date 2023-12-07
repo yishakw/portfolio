@@ -1,4 +1,6 @@
 import IMAGES from "../Images/Images";
+import Connect from "../UI/Connect";
+import Icon from "../UI/Icon";
 function Home() {
   return (
     <div className="bg-frontend mix-blend-color-burn text-black h-[650px] ">
@@ -42,33 +44,20 @@ function Home() {
             Passionate about creating engaging web experiences through
             responsive design and modern technologies.
           </p>
-          <div className="flex gap-9  mt-4 justify-center">
-            <a>
-              <div>
-                <img src={IMAGES.github1} alt="github icon" />
-              </div>
-            </a>
-            <a>
-              <div>
-                <img src={IMAGES.linkedin} alt="linkedin icon" />
-              </div>
-            </a>
-            <a>
-              <div>
-                <img src={IMAGES.instagram} alt="instagram icon" />
-              </div>
-            </a>
-            <a>
-              <div>
-                <img src={IMAGES.email} alt="email icon" />
-              </div>
-            </a>
-            <a>
-              <div>
-                <img src={IMAGES.telegram} alt="telegram icon" />
-              </div>
-            </a>
-          </div>
+          {/* <div className="flex gap-9  mt-4 justify-center items-center">
+            <Icon name="github1" />
+            <Icon name="linkedin" />
+            <Icon name="instagram" />
+            <Icon name="email" />
+            <Icon name="telegram" />
+          </div> */}
+          <Connect>
+            <Icon name="github1" />
+            <Icon name="linkedin" />
+            <Icon name="instagram" />
+            <Icon name="email" />
+            <Icon name="telegram" />
+          </Connect>
         </div>
         <div className="">
           {/* <img
@@ -86,5 +75,13 @@ function Home() {
     </div>
   );
 }
-
+// function Icon({ name }) {
+//   return (
+//     <a>
+//       <div>
+//         <img src={IMAGES[name]} alt={`${name} icon`} />
+//       </div>
+//     </a>
+//   );
+// }
 export default Home;

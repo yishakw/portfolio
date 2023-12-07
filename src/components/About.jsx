@@ -3,7 +3,7 @@ import IMAGES from "../Images/Images";
 function About() {
   return (
     <div className="pt-11 h-[645px]">
-      <h2 className="text-center text-xl mb-5 ">About Me</h2>
+      <h2 className="text-center text-xl mb-5 ">About</h2>
       <div className="flex justify-evenly">
         <img
           src={IMAGES.image2}
