@@ -19,6 +19,9 @@ const IMAGES = {
   maintenance: new URL("./maintenance.svg", import.meta.url).href,
   tailwind: new URL("./tailwind.svg", import.meta.url).href,
   github1: new URL("./github-1.svg", import.meta.url).href,
+  back: new URL("./back-to-top.svg", import.meta.url).href,
+  portfolio: new URL("./portfolioSnnip.PNG", import.meta.url).href,
+  weatherIt: new URL("./weatherIt", import.meta.url).href,
 };
 
 export default IMAGES;

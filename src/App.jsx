@@ -9,37 +9,43 @@ import About from "./components/About";
 import Service from "./components/Service";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
-  // const [count, setCount] = useState(0);
-  // useEffect(function () {
-  //   async function weatherCall() {
-  //     const resp = await fetch(
-  //       "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=oW1rV0cqi8lZe1Uk6kQ5s1Qp1necwrGA"
-  //     );
-  //     const data = await resp.json();
-  //     console.log(data);
-  //   }
-  //   weatherCall();
-  // }, []);
-  // useEffect(function () {
-  //   const navbar = document.querySelector(".navbar");
-  //   let scroll = navbar.getBoundingClientRect().top;
-  //   const scrollThreshold = 50;
-  //   const win = window.scrollY;
-  //   console.log(scroll, win);
-  // }, []);
+  // function NavBar() {
+  //   return (
+  //     <ul className="flex gap-9">
+  //       <NavLink to="/">
+  //         <li>Home</li>
+  //       </NavLink>
+  //       <NavLink to="/about">
+  //         <li>About</li>
+  //       </NavLink>
+  //       <NavLink to="/contact">
+  //         <li>Contact</li>
+  //       </NavLink>
+  //       <NavLink to="/portfolio">
+  //         <li>Portfolio</li>
+  //       </NavLink>
+  //     </ul>
+  //   );
+  // }
+  // function TestHome() {
+  //   return <div>home</div>;
+  // }
+  // function TestAbout() {
+  //   return <div>About</div>;
+  // }
+  // function TestContact() {
+  //   return <div>Contact</div>;
+  // }
+  // function TestPortfolio() {
+  //   return <div>Portfolio</div>;
+  // }
   return (
-    <>
-      <div className="font-mono font-semibold bg-beige text-gray-700  ">
-        <Home />
-
-        <About />
-
-        <Service />
-        <Portfolio />
-        <Contact />
-      </div>
-    </>
+    <div className="font-mono font-semibold bg-beige text-gray-700  ">
+      <Home />
+    </div>
   );
 }
 

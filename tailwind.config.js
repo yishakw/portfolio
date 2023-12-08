@@ -6,6 +6,8 @@ export default {
       backgroundImage: {
         frontend: "url(src/images/frontend-.png)",
         code: "url(src/images/code.png)",
+        portfolio: "url(src/images/portfolioSnnip.PNG)",
+        weatherIt: "url(src/images/weatherIt.PNG)",
       },
       colors: {
         beige: "rgb(245, 245, 220)",

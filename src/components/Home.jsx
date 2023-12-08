@@ -1,18 +1,38 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 import IMAGES from "../Images/Images";
 import Connect from "../UI/Connect";
 import Icon from "../UI/Icon";
+import About from "./About";
+import Service from "./Service";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
 function Home() {
   return (
     <div className="bg-frontend mix-blend-color-burn text-black h-[650px] ">
-      <nav className=" h-[100px]  sticky flex text-xl items-center justify-between  shadow-[0_50px_25px_5px_rgba(0,0,0,0.1)] sm:bg-gradient-to-r  py-auto  bottom-[1000px]">
+      <nav className=" h-[100px] flex text-xl items-center justify-between  shadow-[0_50px_25px_5px_rgba(0,0,0,0.1)] sm:bg-gradient-to-r  bottom-[1000px]">
         <p className="text-3xl font-logo nav_btn ml-4">YISHAK</p>
         <ul className="list-none  space-x-7 hidden sm:flex">
-          <li className="nav_btn">Home</li>
+          {/* <li className="nav_btn">Home</li>
           <li className="nav_btn">About</li>
-          {/* <li>About</li> */}
           <li className="nav_btn">Services</li>
           <li className="nav_btn">Portfolio</li>
-          <li className="nav_btn">contact</li>
+          <li className="nav_btn">contact</li> */}
+          <Link to="/" smooth>
+            <li className="nav_btn">Home</li>
+          </Link>
+          <Link to="/#about" smooth>
+            <li className="nav_btn">About</li>
+          </Link>
+          <Link to="/#service" smooth>
+            <li className="nav_btn">Service</li>
+          </Link>
+          <Link to="/#portfolio" smooth>
+            <li className="nav_btn">Portfolio</li>
+          </Link>
+          <Link to="/#contact" smooth>
+            <li className="nav_btn">contact</li>
+          </Link>
         </ul>
         <div className="sm:hidden">
           <svg
@@ -34,7 +54,7 @@ function Home() {
       </nav>
 
       <div className="flex justify-center ">
-        <div className="h-[800px] text-center  items-center justify-around flex-col center pr-[100px]">
+        <div className="h-[550px] text-center  items-center justify-around flex-col center pr-[100px]">
           <h3 className="pt-[200px] text-lg text-start pl-6 navbar">Hey,</h3>
           <h1 className=" text-4xl sm:text-8xl font-name  font-thin">
             I&apos;m Yishak
@@ -59,19 +79,25 @@ function Home() {
             <Icon name="telegram" />
           </Connect>
         </div>
-        <div className="">
-          {/* <img
+        {/* <div className="">
+          <img
         src={IMAGES.image3}
         alt="yishak's photo"
         className="w-[400px] "
-      /> */}
-          {/* <img
+      />
+          <img
           src={IMAGES.frontend}
           alt="frontend development symbol"
           className="w-[550px] opacity-60 shadow-inner shadow-white mix-blend-color-burn mt-[200px]"
-        /> */}
-        </div>
+        />
+        </div> */}
       </div>
+
+      <About />
+
+      <Service />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
