@@ -1,5 +1,7 @@
 import IMAGES from "../Images/Images";
 
+import "animate.css";
+
 function About() {
   return (
     <div className="pt-11 h-[645px]" id="about">
@@ -8,7 +10,7 @@ function About() {
         <img
           src={IMAGES.image2}
           alt="picture of Yishak"
-          className="w-[450px] h-full mt-11 ml-7 border-none drop-shadow-2xl rounded-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-1000"
+          className="w-[450px] h-full mt-11 ml-7 border-none drop-shadow-2xl rounded-2xl transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-1000 animate_animated animate__zoomIn"
         />
         <div className="w-[700px] pt-11 font-thin leading-8 text-xl font-[popins]">
           <p className="px-8 w-[700px]">

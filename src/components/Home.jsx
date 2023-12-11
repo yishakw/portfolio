@@ -1,5 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
-
+import { NavLink } from "react-router-dom";
+import "animate.css";
 import IMAGES from "../Images/Images";
 import Connect from "../UI/Connect";
 import Icon from "../UI/Icon";
@@ -9,16 +10,18 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 function Home() {
   return (
-    <div className="bg-frontend mix-blend-color-burn text-black h-[650px] ">
-      <nav className=" h-[100px] flex text-xl items-center justify-between  shadow-[0_50px_25px_5px_rgba(0,0,0,0.1)] sm:bg-gradient-to-r  bottom-[1000px]">
-        <p className="text-3xl font-logo nav_btn ml-4">YISHAK</p>
+    <div className="bg-frontend  text-black h-[650px] " id="">
+      <nav className="h-[50px] hover:h-[100px] transition-all flex text-xl items-center justify-between  shadow-[0_50px_25px_5px_rgba(0,0,0,0.1)] sm:bg-gradient-to-r pr-5 fixed w-screen bg-orange-200/70 z-10">
+        <Link to="/#" smooth>
+          <p className="text-3xl font-logo nav_btn ml-4 ">YISHAK</p>
+        </Link>
         <ul className="list-none  space-x-7 hidden sm:flex">
           {/* <li className="nav_btn">Home</li>
           <li className="nav_btn">About</li>
           <li className="nav_btn">Services</li>
           <li className="nav_btn">Portfolio</li>
           <li className="nav_btn">contact</li> */}
-          <Link to="/" smooth>
+          <Link to="/#" smooth>
             <li className="nav_btn">Home</li>
           </Link>
           <Link to="/#about" smooth>
@@ -53,10 +56,10 @@ function Home() {
         </div>
       </nav>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center bg-green-200/80 pt-[100px]">
         <div className="h-[550px] text-center  items-center justify-around flex-col center pr-[100px]">
           <h3 className="pt-[200px] text-lg text-start pl-6 navbar">Hey,</h3>
-          <h1 className=" text-4xl sm:text-8xl font-name  font-thin">
+          <h1 className=" text-4xl sm:text-8xl font-name  font-thin animate_animated animate-pulse">
             I&apos;m Yishak
           </h1>
           <h1 className="text-3xl">I&apos;m a Front-End Web Developer</h1>

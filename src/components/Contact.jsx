@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import Connect from "../UI/Connect";
 import Icon from "../UI/Icon";
 
@@ -56,7 +56,9 @@ function Contact() {
         </Connect>
       </div>
       <div className="flex justify-between items-center px-7 mt-[100px] border-t ">
-        <p className="text-3xl font-logo nav_btn ml-4">YISHAK</p>
+        <Link to="/#" smooth>
+          <p className="text-3xl font-logo nav_btn ml-4">YISHAK</p>
+        </Link>
         <Link to="/#" smooth>
           <Icon name="back" />
         </Link>
