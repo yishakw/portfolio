@@ -1,21 +1,38 @@
 import { HashLink as Link } from "react-router-hash-link";
 import Connect from "../UI/Connect";
 import Icon from "../UI/Icon";
+import IMAGES from "../Images/Images";
+import { useState } from "react";
 
 function Contact() {
+  const [hovered, setHovered] = useState(false);
   return (
-    <div className="h-[645px] bg-slate-400 flex-col " id="contact">
-      <h1 className="text-center py-10 text-2xl">Contact</h1>
-      <div className="bg-slate-400 flex justify-center items-center gap-[100px] h-[200px] w-[1050px] mx-auto">
+    <div className=" bg-slate-400 flex-col " id="contact">
+      <h1 className=" text-3xl font-thin text-center py-10 ">Contact</h1>
+      <div
+        className="bg-slate-400 flex-col justify-center items-center gap-5 h-[200px] mx-auto"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        {/* w-[1050px],gap-[100px] */}
         <Box>
-          <div>
+          <Icon name="call" />
+          <div
+            className={`${
+              !hovered && "hidden"
+            } flex items-center justify-between gap-11`}
+          >
             <h2 className="">Call</h2>
             <a href="tel:+251901052362">+251901052362</a>
           </div>
         </Box>
         <Box>
           <Icon name="email" />
-          <div>
+          <div
+            className={`${
+              !hovered && "hidden"
+            } flex items-center justify-between gap-11`}
+          >
             <h2>Email</h2>
             <a href="mailto:yishakwondimgezahu12@gmail.com">
               yishakwondimgezahu12
@@ -23,24 +40,13 @@ function Contact() {
           </div>
         </Box>
         <Box>
-          <svg
-            className="w-6 h-6 text-gray-800   "
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 21"
+          <Icon name="location" />
+
+          <div
+            className={`${
+              !hovered && "hidden"
+            } flex items-center justify-evenly gap-11`}
           >
-            <g
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            >
-              <path d="M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-              <path d="M13.8 12.938h-.01a7 7 0 1 0-11.465.144h-.016l.141.17c.1.128.2.252.3.372L8 20l5.13-6.248c.193-.209.373-.429.54-.66l.13-.154Z" />
-            </g>
-          </svg>
-          <div>
             <h2>Find me</h2>
 
             <p>Addis Ababa, Ethiopia</p>
@@ -68,7 +74,7 @@ function Contact() {
 }
 function Box({ children }) {
   return (
-    <div className=" text-2xl text-white font-thin flex justify-center items-center">
+    <div className=" text-xl rounded-md hover:bg-gray-100 text-white  flex justify-evenly items-center bg-stone-600/50 m-3 p-3 mx-[60px] font-thin hover:text-purple-500">
       {children}
     </div>
   );

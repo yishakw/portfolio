@@ -9,6 +9,16 @@
     @apply p-2 rounded-xl  hover:cursor-pointer hover:text-beige hover:mix-blend-hard-light hover:bg-gray-600;
   }
 }
+.fancy_layer {
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.fancy_layer:hover {
+  background-size: 100% 3px;
+  transition: background-size 900ms ease;
+}
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

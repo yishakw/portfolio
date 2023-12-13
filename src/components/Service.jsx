@@ -2,12 +2,15 @@ import IMAGES from "../Images/Images";
 
 function Service() {
   return (
-    <div className=" h-[1000px] text-xl " id="service">
-      <h2 className="text-center mb-8 pt-11">Service</h2>
-      <div className="service-1 bg-slate-200 h-[330px] w-[500px] flex-col justify-around items-center mx-auto">
+    <div className="  text-xl " id="service">
+      {/* h-[1000px] */}
+      <h2 className="text-center mb-8 pt-11 text-3xl font-thin">Service</h2>
+      <div className=" bg-slate-200 flex-col justify-around items-center mx-auto">
+        {/* w-[500px], h-[330px] */}
         {/* <p className="m-5">services I&apos;m providing </p> */}
         <p className="m-5 text-center">I Provide</p>
-        <div className="flex items-center justify-center gap-[160px]">
+        <div className="flex-col items-center justify-center ">
+          {/* gap-[160px] */}
           <Serve
             img={IMAGES.code}
             h="Development"
@@ -23,9 +26,12 @@ function Service() {
           />
         </div>
       </div>
-      <div className="service-2 mt-[200px]">
+      <div className="service-2 my-11">
+        {/* mt-[200px] */}
         <p className="m-7 text-center">Technologies in my toolbox</p>
-        <div className="grid gap-y-11 grid-cols-4 grid-rows-2 justify-self-center items-center w-[1100px] mx-auto">
+        <div className="grid gap-y-11 grid-cols-2 justify-self-center items-center mx-auto  ">
+          {/* w-[1100px] */}
+          {/* sm:grid-cols-4 smgrid-rows-2 */}
           <Tool name="HTML" img={IMAGES.html} />
           <Tool name="CSS" img={IMAGES.css} />
           <Tool name="JavaScript" img={IMAGES.js} />
@@ -73,7 +79,8 @@ function Service() {
 }
 function Serve({ img, h, p }) {
   return (
-    <div className="w-[750px] h-[400px] content-center flex-col pt-7 rounded-lg hover:cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-600">
+    <div className=" h-[300px]  content-center flex-col pt-7 rounded-3xl hover:cursor-pointer transition ease-in-out delay-150 bg-blue-200 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-100 duration-600 m-4">
+      {/* w-[750px]  h-[400px] */}
       <img
         src={img}
         alt="symbol of code"
@@ -89,7 +96,7 @@ function Serve({ img, h, p }) {
 }
 function Tool({ name, img }) {
   return (
-    <div className="w-[100px]  transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-101  duration-900 mx-auto">
+    <div className="w-[80px]  transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-101 bg-amber-300/20 hover:bg-lime-200/50 rounded-3xl duration-900 mx-auto flex-col items-center justify-center">
       <p className="text-center ">{name}</p>
       <img src={img} alt="html five icon" />
     </div>

@@ -22,6 +22,8 @@ const IMAGES = {
   back: new URL("./back-to-top.svg", import.meta.url).href,
   portfolio: new URL("./portfolioSnnip.PNG", import.meta.url).href,
   weatherIt: new URL("./weatherIt.PNG", import.meta.url).href,
+  call: new URL("./call.svg", import.meta.url).href,
+  location: new URL("./location.svg", import.meta.url).href,
 };
 
 export default IMAGES;
