@@ -9,7 +9,7 @@ function Service() {
         {/* w-[500px], h-[330px] */}
         {/* <p className="m-5">services I&apos;m providing </p> */}
         <p className="m-5 text-center">I Provide</p>
-        <div className="flex-col items-center justify-center ">
+        <div className="px-6 pb-2 sm:flex sm:items-center sm:justify-around sm:gap-3 md:flex md:items-center md:justify-around ">
           {/* gap-[160px] */}
           <Serve
             img={IMAGES.code}
@@ -29,7 +29,7 @@ function Service() {
       <div className="service-2 my-11">
         {/* mt-[200px] */}
         <p className="m-7 text-center">Technologies in my toolbox</p>
-        <div className="grid gap-y-11 grid-cols-2 justify-self-center items-center mx-auto  ">
+        <div className="grid gap-y-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-self-center items-center mx-auto  ">
           {/* w-[1100px] */}
           {/* sm:grid-cols-4 smgrid-rows-2 */}
           <Tool name="HTML" img={IMAGES.html} />
@@ -79,7 +79,7 @@ function Service() {
 }
 function Serve({ img, h, p }) {
   return (
-    <div className=" h-[300px]  content-center flex-col pt-7 rounded-3xl hover:cursor-pointer transition ease-in-out delay-150 bg-blue-200 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-100 duration-600 m-4">
+    <div className=" h-[300px]   pt-7  rounded-3xl hover:cursor-pointer transition ease-in-out delay-150 bg-blue-200 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-100 duration-600 max-w-sm  mx-auto  my-4">
       {/* w-[750px]  h-[400px] */}
       <img
         src={img}
@@ -88,15 +88,13 @@ function Serve({ img, h, p }) {
       />
 
       <h2 className="text-center pt-5">{h}</h2>
-      <p className="font-[popins] font-thin center w-[300px] text-center mx-auto pt-6">
-        {p}
-      </p>
+      <p className="font-[popins] font-thin text-center mx-auto pt-6">{p}</p>
     </div>
   );
 }
 function Tool({ name, img }) {
   return (
-    <div className="w-[80px]  transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-101 bg-amber-300/20 hover:bg-lime-200/50 rounded-3xl duration-900 mx-auto flex-col items-center justify-center">
+    <div className="w-[80px] md:w-[110px] lg-w[150px] transition ease-in-out delay-0  hover:-translate-y-1 hover:scale-101 bg-amber-300/20 hover:bg-lime-200/50 rounded-3xl duration-900 mx-auto flex-col items-center justify-center">
       <p className="text-center ">{name}</p>
       <img src={img} alt="html five icon" />
     </div>

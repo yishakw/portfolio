@@ -19,10 +19,10 @@ function Home() {
       <nav
         className={`flex text-xl items-center justify-between  shadow-[0_50px_25px_5px_rgba(0,0,0,0.1)] ${
           !showNav && "hover:h-[100px]"
-        } pr-5 fixed w-full bg-orange-200/70 z-10 sm:h-[50px] sm:hover:h-[100px] sm:transition-all animate_animated animate__bounceInDown`}
+        } pr-5 fixed w-full bg-orange-200/70 z-10 sm:h-[50px] sm:hover:h-[100px] sm:transition-all animate_animated animate__bounceInDown `}
       >
-        <div className="flex-col">
-          <div className="flex items-center w-[90vw] justify-between">
+        <div className="sm:flex sm:justify-between sm:items-center md:flex md:justify-between w-full">
+          <div className="flex items-center w-[90vw] sm:w-fit md:w-fit justify-between">
             <div>
               <Link to="/#" smooth>
                 <p className="text-3xl font-logo nav_btn ml-4 ">YISHAK</p>
@@ -30,7 +30,7 @@ function Home() {
             </div>
 
             <div
-              className="sm:hidden pr-3 hover:cursor-pointer"
+              className="md:hidden sm:hidden pr-3 hover:cursor-pointer"
               onClick={showNavigationHandler}
             >
               <svg
@@ -50,11 +50,11 @@ function Home() {
               </svg>
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-end sm:justify-normal sm:w-fit md:justify-center">
             <ul
               className={`list-none   ${
                 showNav ? "" : "hidden"
-              } sm:space-x-7 text-end sm:flex`}
+              } sm:space-x-2 text-end sm:flex md:space-x-5`}
             >
               {/* <li className="nav_btn">Home</li>
           <li className="nav_btn">About</li>
@@ -81,12 +81,12 @@ function Home() {
         </div>
       </nav>
 
-      <div className="flex justify-center bg-green-200/80 pt-[100px]">
+      <div className="flex justify-center bg-green-200/80 pt-[130px]">
         <div className="h-[550px] text-center  items-center justify-around flex-col center ">
           {/* pr-[100px] */}
           <h3 className=" text-lg text-start pl-6 navbar">Hey,</h3>
           {/* pt-[200px] */}
-          <h1 className=" text-4xl sm:text-8xl font-name  font-thin animate_animated animate-pulse">
+          <h1 className=" text-5xl sm:text-8xl font-name  font-thin animate_animated animate-pulse">
             I&apos;m Yishak
           </h1>
           <h1 className="text-3xl px-4">I&apos;m a Front-End Web Developer</h1>
