@@ -52,9 +52,15 @@ function Contact() {
       <div className="my-11">
         <h2 className="text-center mt-11 text-2xl">Lets Connect</h2>
         <Connect>
-          <Icon name="linkedin" />
-          <Icon name="instagram" />
-          <Icon name="telegram" />
+          <Icon
+            name="linkedin"
+            href="https://www.linkedin.com/in/yishak-wondimgezahu-8b4930246"
+          />
+          <Icon
+            name="instagram"
+            href="https://www.instagram.com/wondimgezahu/"
+          />
+          <Icon name="telegram" href="mailto:yishakwondimgezahu12@gmail.com" />
         </Connect>
       </div>
       <div className="flex justify-between items-center px-7 mt-[100px] border-t ">

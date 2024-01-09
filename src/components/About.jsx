@@ -33,7 +33,11 @@ function About() {
           </p>
           <div className="ml-6 mt-6 ">
             {/* mt-[170px] mx-9 */}
-            <a href="#" className="fancy_layer">
+            <a
+              href="assets/YishakW.pdf"
+              className="fancy_layer"
+              download="YishakW.pdf"
+            >
               Download CV
             </a>
           </div>

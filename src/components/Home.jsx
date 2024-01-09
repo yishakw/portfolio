@@ -102,11 +102,17 @@ function Home() {
             <Icon name="telegram" />
           </div> */}
           <Connect>
-            <Icon name="github1" />
-            <Icon name="linkedin" />
-            <Icon name="instagram" />
-            <Icon name="email" />
-            <Icon name="telegram" />
+            <Icon name="github1" href="https://github.com/yishakw" />
+            <Icon
+              name="linkedin"
+              href="https://www.linkedin.com/in/yishak-wondimgezahu-8b4930246"
+            />
+            <Icon
+              name="instagram"
+              href="https://www.instagram.com/wondimgezahu/"
+            />
+            <Icon name="email" href="mailto:yishakwondimgezahu12@gmail.com" />
+            <Icon name="telegram" href="https://t.me/Luck1e" />
           </Connect>
         </div>
       </div>
