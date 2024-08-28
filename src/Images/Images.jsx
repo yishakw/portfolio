@@ -1,7 +1,8 @@
 const IMAGES = {
   image1: new URL("./pp.jpg", import.meta.url).href,
-  image2: new URL("./p1.jpg", import.meta.url).href,
+  image2: new URL("./pix_1.png", import.meta.url).href,
   image3: new URL("./p2.jpg", import.meta.url).href,
+  home: new URL("./home.png", import.meta.url).href,
   github: new URL("./github.svg", import.meta.url).href,
   instagram: new URL("./instagram.svg", import.meta.url).href,
   email: new URL("./envelope.svg", import.meta.url).href,
@@ -22,8 +23,12 @@ const IMAGES = {
   back: new URL("./back-to-top.svg", import.meta.url).href,
   portfolio: new URL("./portfolioSnnip.PNG", import.meta.url).href,
   weatherIt: new URL("./weatherIt.PNG", import.meta.url).href,
+  abyssinia: new URL("./abyssinia.png", import.meta.url).href,
   call: new URL("./call.svg", import.meta.url).href,
   location: new URL("./location.svg", import.meta.url).href,
+  pix2: new URL("./pix_2.png", import.meta.url).href,
+  projects: new URL("./project.png", import.meta.url).href,
+  pix3: new URL("./pix_3.png", import.meta.url).href,
 };
 
 export default IMAGES;

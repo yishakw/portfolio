@@ -1,6 +1,6 @@
 function Connect({ children }) {
   return (
-    <div className="flex gap-9  mt-4 justify-center items-center">
+    <div className="flex sm:gap-9 gap-6  mt-4 justify-center items-center">
       {children}
     </div>
   );
