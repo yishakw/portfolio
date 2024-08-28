@@ -43,7 +43,7 @@ function App() {
   //   return <div>Portfolio</div>;
   // }
   return (
-    <div className="font-mono font-semibold bg-beige text-gray-700  ">
+    <div className="font-mono font-semibold bg-beige text-gray-700 scroll-smooth">
       <Home />
     </div>
   );

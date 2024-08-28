@@ -4,7 +4,7 @@ function Service() {
   return (
     <div className="  text-xl " id="service">
       {/* h-[1000px] */}
-      <div className=" bg-slate-200 flex-col justify-around items-center mx-auto">
+      <div className=" bg-slate-200 flex-col justify-around items-center mx-auto py-20">
         <h2 className="text-center mb-8 pt-11 text-3xl font-thin">I Do</h2>
         {/* w-[500px], h-[330px] */}
         {/* <p className="m-5">services I&apos;m providing </p> */}

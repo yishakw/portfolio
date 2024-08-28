@@ -38,18 +38,9 @@ function Nav() {
         </Link>
       </div>
       <div className="flex justify-evenly w-[40vw]  items-center">
-        <IconNav
-          name="home"
-          href="https://www.linkedin.com/in/yishak-wondimgezahu-8b4930246"
-          scale={"scale-150"}
-          hid={true}
-        />
+        <IconNav name="home" href="/#" scale={"scale-150"} hid={true} />
 
-        <IconNav
-          name="projects"
-          href="mailto:yishakwondimgezahu12@gmail.com"
-          scale={"scale-90"}
-        />
+        <IconNav name="projects" href="/#portfolio" scale={"scale-90"} />
         {/* <IconNav name="call" href="https://t.me/Luck1e" /> */}
       </div>
     </nav>

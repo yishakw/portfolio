@@ -15,13 +15,12 @@ function Portfolio() {
     },
     {
       image: "abyssinia",
-      title: "Abyssinia Software Solutions",
+      title: "Landing Page",
       link: "https://abyssiniasoftwaresolutions-yishak-s-projects.vercel.app/",
     },
   ];
-  console.log(projects[1].image);
   return (
-    <div className="bg-gray-300 pb-3" id="portfolio">
+    <div className="bg-gray-300 pb-3 pt-20" id="portfolio">
       <h2 className="text-center py-11 text-3xl font-thin">Portfolio</h2>
       <div className="  mx-auto sm:grid sm:grid-cols-2 gap-1 sm:items-center">
         {projects.map((proj, i) => {
@@ -38,7 +37,7 @@ function Portfolio() {
         {/* <Project photo="portfolio" />
         <Project photo="weatherIt" /> */}
       </div>
-      <div className="service-2 my-11">
+      <div className="service-2 my-20">
         {/* mt-[200px] */}
         <p className="m-7 text-center">Technologies in my toolbox</p>
         <div className="grid gap-y-11 grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-self-center items-center mx-auto  ">
@@ -67,11 +66,13 @@ function Project({ photo, title, tech, link }) {
     >
       <a href={link}>
         <div
-          className={`absolute w-full flex justify-center items-center h-full z-10  ${
+          className={`absolute w-full flex flex-col justify-center items-center h-full z-10  ${
             !hovered ? "hidden" : ""
-          } bg-yellow-900/70`}
+          } bg-yellow-900/80`}
         >
-          <h1 className=" rounded-xl p-5 text-2xl">{title}</h1>
+          <h1 className=" rounded-xl p-1 text-white hover:text-stone-900 text-2xl">
+            {title}
+          </h1>
           <p>{tech}</p>
         </div>
       </a>
